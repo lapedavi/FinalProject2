@@ -23,7 +23,7 @@ class Gui:
         self.main_delete_button.pack(side='right')
         self.main_button_frame.pack()
 
-        self.main_error_label = Label(self.main_frame)
+        self.main_error_label = Label(self.main_frame, fg='red')
 
         self.main_error_label.pack(pady=10)
         self.main_frame.pack()
@@ -51,7 +51,7 @@ class Gui:
         self.add_collection_back_button.pack(side='right', padx=10)
         self.add_collection_button_frame.pack()
 
-        self.add_collection_error_label = Label(self.add_collection_frame)
+        self.add_collection_error_label = Label(self.add_collection_frame, fg='red')
 
         self.add_collection_error_label.pack(pady=10)
 
@@ -94,7 +94,7 @@ class Gui:
         self.add_item_back_button.pack(side='right', padx=10)
         self.add_item_button_frame.pack()
 
-        self.add_item_error_label = Label(self.add_item_frame)
+        self.add_item_error_label = Label(self.add_item_frame, fg='red')
 
         self.add_item_error_label.pack(pady=10)
 
