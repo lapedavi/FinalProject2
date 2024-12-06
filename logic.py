@@ -6,6 +6,7 @@ class Logic(Gui):
     DATA_FOLDER = 'data/'
 
     def __init__(self, window) -> None:
+        """Read collection files from data directory and set command function for buttons"""
         super().__init__(window)
 
         if not os.path.exists(self.DATA_FOLDER):
@@ -75,6 +76,7 @@ class Logic(Gui):
         self.collection_frame.pack()
 
     def select_delete_collection(self) -> None:
+        """Delete selected collection"""
         index = self.main_collections_listbox.curselection()
 
         if len(index) == 0:
